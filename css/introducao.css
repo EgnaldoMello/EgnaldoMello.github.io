@@ -1,0 +1,111 @@
+.introdução {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.fotodeperfil {
+  width: 100%;
+}
+
+.introdução h1 {
+  color: white;
+  font-family: "public sans";
+  font-size: 4rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.introdução p {
+  color: #b3b3b3;
+  font-family: "public sans";
+  font-size: 2rem;
+  letter-spacing: 0.2vh;
+  font-weight: 500;
+  margin-top: 50px;
+  position: relative;
+  width: auto;
+}
+
+.localização {
+  /* position: absolute;
+  top: -10px;
+  right: 160px; */
+  display: flex;
+  gap: 40px;
+  align-items: end;
+}
+
+.pontofinal {
+  color: #435fdf;
+}
+
+.linha2 {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  margin-top: 10px;
+  grid-column: span 2;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  position: relative;
+  display: grid;
+}
+
+.detalhe1 {
+  position: absolute;
+  top: -60px;
+  justify-self: center;
+}
+
+@media (width < 1000px) {
+  .introdução h1 {
+    font-size: 2.5rem;
+  }
+  .introdução p {
+    font-size: 1.5rem;
+  }
+  .localização {
+    gap: 20px;
+  }
+  .s-local {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (width < 800px) {
+  .introdução h1 {
+    font-size: 2rem;
+  }
+  .introdução p {
+    font-size: 1rem;
+  }
+  .introdução {
+    justify-content: center;
+  }
+  .s-local {
+    width: 30px;
+    height: 30px;
+  }
+  .detalhe1 {
+    height: 80px;
+    width: 100px;
+    top: -40px;
+  }
+}
+
+@media (width < 400px) {
+  .fotodeperfil {
+    display: none;
+  }
+  .introdução {
+    grid-template-columns: 1fr;
+  }
+  .localização {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,121 @@
+.footer-container {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  background-color: black;
+  justify-items: center;
+}
+
+.linha4 {
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  grid-column: span 2;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.detalhe3 {
+  position: absolute;
+  left: 100px;
+  top: -70px;
+}
+
+.footer-texto {
+  color: white;
+  font-family: "public sans";
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.footer-contato {
+  display: grid;
+  gap: 10px;
+  padding-top: 5px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.footer-contato p {
+  color: white;
+  font-size: 2rem;
+  padding-left: 15px;
+}
+
+.footer-contato img {
+  justify-self: end;
+}
+
+.direitos {
+  justify-items: center;
+  color: #b3b3b3;
+  grid-column: span 2;
+  font-size: 1rem;
+}
+
+@media (width < 1000px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  .footer-contato {
+    grid-row: 3;
+    width: min-content;
+    padding-left: 100px;
+  }
+  .footer-texto {
+    justify-self: center;
+    text-align: center;
+    padding-left: 25px;
+  }
+  .footer-contato img {
+    width: max-content;
+  }
+  .footer-contato p {
+    justify-self: start;
+  }
+
+  @media (width < 600px) {
+    .footer-texto {
+      font-size: 1.3rem;
+    }
+    .footer-contato p {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (width < 500px) {
+    .footer-texto {
+      font-size: 1rem;
+      padding-left: 0px;
+      grid-column: span 2;
+    }
+    .footer-contato {
+      justify-self: center;
+      padding-left: 0px;
+      grid-column: span 2;
+      gap: 30px;
+    }
+    .footer-contato p {
+      font-size: 1rem;
+    }
+    .direitos {
+      grid-column: span 2;
+      text-align: center;
+    }
+  }
+
+  @media (width < 400px) {
+    .footer-contato {
+      display: flex;
+      flex-direction: column;
+    }
+    .detalhe3 {
+      display: none;
+    }
+  }
+}
